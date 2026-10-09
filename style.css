@@ -34,3 +34,12 @@
 .ticket-thread{display:flex;flex-direction:column;gap:12px;margin:18px 0}.ticket-message{max-width:91%;border:1px solid #3879b8;border-radius:19px;padding:13px 16px;align-self:flex-start;background:#15294c}.ticket-message.mine{align-self:flex-end;background:#0a4381;border-color:#269be7}.ticket-message small{font-size:10px;color:#c1e5ff}.ticket-message p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.9;margin:7px 0 0;font-size:14px}.setting-card .btn+.btn{margin-top:10px}
 
 .google-login{background:linear-gradient(125deg,#f5faff,#c4e5ff);color:#092b53;border:1px solid #9fe2ff;margin:10px 0 15px}
+
+/* V7 profile and accessible game sound */
+.profile-hero{text-align:center;border:1px solid #387bc4;border-radius:22px;padding:25px 16px;background:linear-gradient(145deg,#174982,#0b2246);margin:16px 0;box-shadow:0 10px 22px #0004}
+.profile-avatar{height:86px;width:86px;border-radius:50%;display:grid;place-items:center;overflow:hidden;margin:0 auto 12px;background:#b8dfff;color:#0a3267;font-size:42px;border:3px solid #65bfff}
+.profile-avatar img{width:100%;height:100%;object-fit:cover}.profile-hero h2{margin:8px 0;font-size:23px;overflow-wrap:anywhere}.profile-hero p{margin:8px 0}.profile-hero small{color:#c7eaff;overflow-wrap:anywhere;display:block}.profile-status{color:#8cf3c8;font-size:13px;font-weight:800}
+.profile-stats{margin:16px 0}.question-play{display:block;margin:12px auto;padding:10px 18px;border:1px solid #66c7ff;border-radius:13px;background:#0e5c9d;color:white;font-weight:800;font-family:inherit}
+.game-audio-hint{background:#0d345b;border:1px solid #3289ce;padding:12px 14px;border-radius:15px;color:#e0f5ff;line-height:1.8;margin:18px 0;font-size:13px}
+.sound-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;border-top:1px solid #356ca5;padding-top:16px}.sound-toggle button{border:1px solid #4da4eb;border-radius:12px;padding:8px 12px;background:#0d4d8d;color:#fff;font-family:inherit}
+.header-profile{border:1px solid #447fb8;background:#103766;border-radius:50%;height:34px;width:34px;display:grid;place-items:center;flex:none;color:white;font-size:17px}
