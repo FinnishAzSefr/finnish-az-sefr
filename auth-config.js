@@ -1,2 +1,4 @@
-// Public Supabase project URL and publishable/anon key ONLY. Never add service_role or secret keys.
-window.FINNISH_AUTH_CONFIG={url:'',anonKey:''};
+window.FINNISH_AUTH_CONFIG = {
+  url: 'https://hodpiiqpkpgcfskzgkcq.supabase.co',
+  anonKey: 'sb_publishable_upsNA1AiOYwUZxgNQ9l_ug_bpJYaQOx'
+};
