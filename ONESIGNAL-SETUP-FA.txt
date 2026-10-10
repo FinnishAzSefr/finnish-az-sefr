@@ -1,0 +1,14 @@
+نسخه V11 فنلاندی از صفر + OneSignal Web Push
+
+این نسخه بر پایه فایل اصلی V11 ساخته شده و امکانات V11 را نگه می‌دارد.
+تنظیمات OneSignal:
+Path to service worker files: /finnish-az-sefr/onesignal/
+Main service worker filename: OneSignalSDKWorker.js
+Updater service worker filename: OneSignalSDKUpdaterWorker.js
+Service worker registration scope: /finnish-az-sefr/onesignal/
+
+همه فایل‌ها و پوشه onesignal را در ریشه مخزن GitHub Pages قرار بده.
+خود ZIP را مستقیماً در GitHub آپلود نکن.
+در آیفون سایت باید با Safari به Home Screen اضافه و از آیکن اجرا شود.
+کلید REST API در فایل‌های عمومی قرار ندارد.
+عملکرد Push هنوز روی آیفون واقعی آزمایش نشده است.

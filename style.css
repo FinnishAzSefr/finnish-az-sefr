@@ -89,3 +89,15 @@ body{font-weight:400}
 .social-links p{font-size:13px;color:#c4d8ef;margin:0 0 12px}
 .social-links a{display:block;color:#dff3ff;text-decoration:none;padding:12px 10px;border-top:1px solid #294c74;font-size:14px;font-weight:500}
 .social-links a:focus-visible{outline:2px solid #42d7ff;outline-offset:2px}
+
+/* V11 account, accessible guest previews and reminder */
+.guest-lock{font-size:11px;color:#d5e7ff;display:block;margin-top:7px}
+.guest-invite{padding:16px;margin:16px 0;border:1px solid #4482b7;border-radius:16px;background:#12335c;line-height:1.8;text-align:center}
+.guest-invite .btn{display:block;margin:10px auto 0;max-width:260px}
+.category-tile:disabled,.game-tile:disabled,.quiz-levels button:disabled{opacity:.58;filter:saturate(.6);cursor:not-allowed}
+.avatar-options{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:13px 0}
+.avatar-options button{font-size:26px;border-radius:14px;border:1px solid #5286c3;background:#133e6b;min-height:54px}
+.profile-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.verify-notice{background:#143d66;border:1px solid #6aa8dc;border-radius:14px;padding:13px;margin-top:14px;line-height:1.8}
+.verify-notice p{font-size:14px}
+.tiny-note{font-size:12px;color:#a8bed8;line-height:1.8}
