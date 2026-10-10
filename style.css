@@ -43,3 +43,49 @@
 .game-audio-hint{background:#0d345b;border:1px solid #3289ce;padding:12px 14px;border-radius:15px;color:#e0f5ff;line-height:1.8;margin:18px 0;font-size:13px}
 .sound-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;border-top:1px solid #356ca5;padding-top:16px}.sound-toggle button{border:1px solid #4da4eb;border-radius:12px;padding:8px 12px;background:#0d4d8d;color:#fff;font-family:inherit}
 .header-profile{border:1px solid #447fb8;background:#103766;border-radius:50%;height:34px;width:34px;display:grid;place-items:center;flex:none;color:white;font-size:17px}
+
+/* V9: calmer, easier-to-read layout and compact navigation */
+body{font-weight:400}
+.page-head h1,.section-title h2,.game-tile strong,.quick strong,.more-list button,.vocab-info strong{font-weight:700}
+.bottom-nav{padding:5px 7px calc(5px + env(safe-area-inset-bottom));border-radius:18px 18px 0 0;box-shadow:0 -4px 18px #0005}
+.bottom-nav button{padding:5px 2px;border-radius:13px}
+.bottom-nav button span{font-size:21px}
+.bottom-nav button small{font-size:10px;font-weight:600}
+.bottom-nav button.active{box-shadow:inset 0 1px 2px #8bc5f9}
+.game-tile strong{font-size:15px}
+.letter-tiles{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:20px 0}
+.letter-tiles button{min-width:40px;min-height:48px;border:1px solid #62a7ec;background:#163c6e;color:white;border-radius:12px;font-size:22px;font-weight:700}
+.letter-tiles button:disabled{opacity:.23}
+.spelling-result{font-size:27px;letter-spacing:2px;min-height:48px;font-weight:700;color:#a6e6ff}
+.spelling-actions{display:flex;gap:10px}
+.spelling-actions .btn{min-width:0}
+
+/* V10 — lightweight four-choice quiz; mobile-friendly, readable, accessible. */
+.quiz-launch{background:linear-gradient(135deg,#103b6c,#0b2145);border:1px solid #4b91db;border-radius:21px;padding:17px;margin:14px 0 20px;box-shadow:0 6px 22px #0004}
+.quiz-launch h2{font-size:19px;font-weight:700;margin:0 0 5px}
+.quiz-launch p{font-size:13px;line-height:1.9;color:#d5e8fa;margin:4px 0 15px}
+.quiz-levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.quiz-levels button{min-height:49px;border:1px solid #58a5ee;background:#10477c;color:#fff;border-radius:13px;font-size:13px;font-weight:650;padding:9px 5px}
+.quiz-levels button:active{background:#216ab0}
+.quiz-panel{border:1px solid #2c77bd;border-radius:20px;background:#0b2345;padding:15px;margin:15px 0}
+.quiz-prompt{font-size:19px;font-weight:700;line-height:1.9;text-align:center;margin:6px 0 16px}
+.quiz-options{display:grid;grid-template-columns:1fr;gap:10px}
+.quiz-option{width:100%;min-height:58px;border-radius:14px;border:1px solid #386ba7;background:#102f58;color:#fff;text-align:right;display:flex;align-items:center;gap:13px;padding:10px 13px;font-weight:600;font-size:16px;line-height:1.6}
+.quiz-option-index{background:#1c5185;border-radius:10px;width:30px;height:30px;display:grid;place-items:center;flex:none;font-size:13px}
+.quiz-option.right{border-color:#41d7aa;background:#104a47}
+.quiz-option.wrong{border-color:#ff8a91;background:#632a42}
+.quiz-option:disabled{opacity:1}
+.quiz-feedback{border-radius:15px;padding:13px 15px;margin-top:15px;line-height:1.9;background:#133a55;border:1px solid #3e7caa}
+.quiz-feedback.good{border-color:#29c992}.quiz-feedback.bad{border-color:#e98290}
+.quiz-feedback p{margin:6px 0 0;font-size:14px;color:#e6f1ff}
+.quiz-next{width:100%;margin-top:14px}
+.quiz-finish{border:1px solid #3e8bd2;border-radius:24px;background:linear-gradient(145deg,#103a6d,#091d3d);padding:30px 18px;text-align:center;margin-top:24px}
+.quiz-finish-icon{font-size:55px}.quiz-score{font-size:36px;font-weight:800;margin:8px 0;color:#c9eaff}
+.quiz-actions{display:grid;gap:10px;margin-top:20px}
+@media(max-width:350px){.quiz-levels{grid-template-columns:1fr}.quiz-prompt{font-size:17px}}
+
+/* Public release links */
+.social-links{margin:24px 0 4px;padding:15px;border:1px solid #315d91;border-radius:17px;background:#0b2344}
+.social-links p{font-size:13px;color:#c4d8ef;margin:0 0 12px}
+.social-links a{display:block;color:#dff3ff;text-decoration:none;padding:12px 10px;border-top:1px solid #294c74;font-size:14px;font-weight:500}
+.social-links a:focus-visible{outline:2px solid #42d7ff;outline-offset:2px}
