@@ -1,0 +1,30 @@
+
+name: Finnish Daily Reminder
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  send-reminder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get app files
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Send OneSignal reminder
+        env:
+          ONESIGNAL_APP_ID: 658ba2eb-e7be-4f0f-9486-32fb751da021
+          ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+        run: node scripts/send-reminder.mjs
